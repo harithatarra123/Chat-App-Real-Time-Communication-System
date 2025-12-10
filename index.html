@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App — Private Chats + History + UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>Rooms</h1>
+      <div class="new-room">
+        <input id="new-room-name" placeholder="Create room..." />
+        <button id="create-room-btn">Create</button>
+      </div>
+      <ul id="rooms-list"></ul>
+
+      <h2>Online Users</h2>
+      <ul id="users-list"></ul>
+    </aside>
+
+    <main class="chat">
+      <div class="chat-header">
+        <input id="username" placeholder="Your name (unique)" />
+        <button id="register-btn">Set Name</button>
+        <div id="current-room">Not joined</div>
+      </div>
+
+      <div id="messages" class="messages"></div>
+      <div id="typing" class="typing"></div>
+
+      <div class="composer">
+        <input id="msg" placeholder="Type a message..." autocomplete="off" />
+        <button id="send-btn">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

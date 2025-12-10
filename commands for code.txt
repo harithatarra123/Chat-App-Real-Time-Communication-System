@@ -1,0 +1,10 @@
+commands for code: 
+  npm install
+  npm start
+
+commands for mongodb:
+ 1. mongod --version
+ 2.mongosh
+ 3.use chatapp
+ 4.show collections
+ 5.db.messages.find().pretty()
